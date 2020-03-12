@@ -152,6 +152,127 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Git教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/12/Git%E6%95%99%E7%A8%8B/">Git教程</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/12/Git%E6%95%99%E7%A8%8B/" class="archive-article-date">
+  	<time datetime="2020-03-12T04:53:54.085Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Git教程"><a href="#Git教程" class="headerlink" title="Git教程"></a>Git教程</h1><h2 id="Git介绍"><a href="#Git介绍" class="headerlink" title="Git介绍"></a>Git介绍</h2><ul>
+<li>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</li>
+<li>Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</li>
+<li>Git 完整命令手册地址：<a href="http://git-scm.com/docs" target="_blank" rel="noopener">http://git-scm.com/docs</a></li>
+<li>PDF 版命令手册：<a href="https://www.runoob.com/manual/github-git-cheat-sheet.pdf" target="_blank" rel="noopener">github-git-cheat-sheet.pdf</a></li>
+<li>Git安装教程：<a href="https://www.runoob.com/git/git-install-setup.html" target="_blank" rel="noopener">菜鸟</a></li>
+</ul>
+<h2 id="Git-与-SVN-区别"><a href="#Git-与-SVN-区别" class="headerlink" title="Git 与 SVN 区别"></a>Git 与 SVN 区别</h2><ul>
+<li><strong>git是分布式的，svn是集中式的。</strong></li>
+<li><strong>Git 把内容按元数据方式存储，而 SVN 是按文件</strong></li>
+<li><strong>Git 分支和 SVN 的分支不同</strong></li>
+<li><strong>Git 没有一个全局的版本号，而 SVN 有</strong></li>
+<li><strong>Git 的内容完整性要优于 SVN</strong></li>
+</ul>
+<h2 id="Git基本过程"><a href="#Git基本过程" class="headerlink" title="Git基本过程"></a>Git基本过程</h2><h3 id="基本提交"><a href="#基本提交" class="headerlink" title="基本提交"></a>基本提交</h3><ul>
+<li>git init:仓库初始化</li>
+<li>git add . :把更新的内容提交到</li>
+<li>git commit -m “提示信息”</li>
+</ul>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><ul>
+<li>git clone 地址</li>
+</ul>
+<h3 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h3><ul>
+<li>git status:查看状态</li>
+</ul>
+<h3 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h3><ul>
+<li>执行 git diff 来查看执行 git status 的结果的详细信息</li>
+<li>git diff 命令显示已写入缓存与已修改但尚未写入缓存的改动的区别</li>
+<li>git status 显示你上次提交更新后的更改或者写入缓存的改动， 而 git diff 一行一行地显示这些改动具体是啥。</li>
+</ul>
+<h3 id="git-reset-HEAD"><a href="#git-reset-HEAD" class="headerlink" title="git reset HEAD"></a>git reset HEAD</h3><ul>
+<li>git reset HEAD 文件名： 命令用于取消已缓存的内容。</li>
+</ul>
+<h3 id="git-rm"><a href="#git-rm" class="headerlink" title="git rm"></a>git rm</h3><ul>
+<li>如果只是简单地从工作目录中手工删除文件，运行 <strong>git status</strong> 时就会在 <strong>Changes not staged for commit</strong> 的提示。</li>
+</ul>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><ul>
+<li>创建分支：git branch 分支名字</li>
+<li>切换分支：git checkout 分支名字</li>
+<li>合并分支：git merge 子分支的名字</li>
+<li>列出分支：git branch</li>
+<li>删除分支：git branch -d 分支名字</li>
+<li>合并冲突：手动解决</li>
+</ul>
+<h2 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h2><ul>
+<li>git log:查看历史提交记录</li>
+<li>git log –oneline：历史记录一行显示</li>
+</ul>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><ul>
+<li>如果你达到一个重要的阶段，并希望永远记住那个特别的提交快照，你可以使用 git tag 给它打上标签。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a v1<span class="number">.0</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><ul>
+<li>git remote add origin 地址</li>
+<li>git push -u origin master</li>
+<li>下次提交直接Git push</li>
+<li>待续。。。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/12/Git%E6%95%99%E7%A8%8B/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
